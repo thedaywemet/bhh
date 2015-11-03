@@ -1,0 +1,34 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author tarc
+ */
+import javax.swing.JFrame;
+import javax.swing.JButton;
+
+public class MyFrame extends JFrame {
+    private JButton jbtOK = new JButton("OK");
+    
+    public MyFrame(){
+        super("Frame Title");
+        add(jbtOK);
+        setSize(400, 300);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        setVisible(true);
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        MyFrame myFrame = new MyFrame();
+    }
+    
+}
